@@ -25,6 +25,7 @@ The add-in appears on the right-click menu of the chart area, a data point, a da
 - Clear Selection: remove the highlight and the drawn outline.
 - Cancel Selection Mode: leave the current tool without changing anything.
 - Undo and Redo: step backwards and forwards through selection edits, including deletions and statistics.
+- Object Persistence: keep the drawn outline after deleting rows, so it can be moved or duplicated with Ctrl+D to select another part of the chart.
 - Refresh Chart Handlers: reattach the add-in to the charts in the active workbook.
 
 ## Install
@@ -52,7 +53,8 @@ The example starts the lasso tool, returns the first selected Y cell address, an
 ## Package contents
 
 - `ExcelChart Selection.xlam`: the add-in installed by the installer
-- `ExcelChart Selection v1.1.xlam`: the current version, including the lasso tool and the data-point context menu
+- `ExcelChart Selection v1.2.xlam`: the current version, including the lasso tool, the data-point context menu, and object persistence
+- `ExcelChart Selection v1.1.xlam`: the previous version, including the lasso tool and the data-point context menu
 - `ExcelChart_Selection_Workbook.xlsm`: the development workbook with the same code embedded
 - `ExcelChart Selection Demo.xlsx`: a small sample workbook with one series chart
 - Install and Uninstall scripts
