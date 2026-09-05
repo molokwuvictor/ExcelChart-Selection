@@ -28,6 +28,12 @@ The add-in appears on the right-click menu of the chart area, a data point, a da
 - Object Persistence: keep the drawn outline after deleting rows, so it can be moved or duplicated with Ctrl+D to select another part of the chart.
 - Refresh Chart Handlers: reattach the add-in to the charts in the active workbook.
 
+## How deletion finds its column range
+
+The delete commands work from the chart series' X and Y source columns. The unbroken band of populated columns between them becomes the deletion boundary.
+
+![Diagram of the delete selection flow, showing the X and Y source columns and the deletion boundary](images/description_readme.png)
+
 ## Install
 
 1. Close every Excel window.
